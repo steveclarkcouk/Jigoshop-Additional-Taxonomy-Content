@@ -8,7 +8,7 @@ This plugin allows you to add additional HTML content to your Product Tag and Ca
 = Install =
 
 1. Unzip the zip file. 
-1. Upload the the `Currency-Converter-Jigoshop` folder (not just the files in it!) to your `wp-contents/plugins` folder.
+1. Upload the the `Jigoshop-Additional-Taxonomy-Content` folder (not just the files in it!) to your `wp-contents/plugins` folder.
 
 = Activate =
 
