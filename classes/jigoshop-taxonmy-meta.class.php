@@ -152,7 +152,7 @@ class Jigoshop_Additonal_Taxonomy_Content_Admin extends Jigoshop_Additonal_Taxon
 								<?php foreach($shop_cats as $cat) : ?>	
 									<tr>
 										<td style="width:848px;" width="848"><strong><?php echo $cat->cat_name; ?></strong><br/>
-											<textarea class="editor" style="width:848px;height:200px"  name="<?php echo $this->data['prefix']; ?>tax_<?php echo $cat->category_nicename; ?>"><?php echo html_entity_decode(wp_richedit_pre( esc_html( get_option( $this->data['prefix'] . 'tax_' .  $cat->category_nicename) ) ) ); ?></textarea>
+											<textarea class="editor" style="width:848px;height:200px"  name="<?php echo $this->data['prefix']; ?>tax_<?php echo $cat->category_nicename; ?>"><?php echo html_entity_decode(wp_richedit_pre( esc_html( stripslashes ( get_option( $this->data['prefix'] . 'tax_' .  $cat->category_nicename) ) ) ) ); ?></textarea>
 										</td>
 
 									</tr>
@@ -178,7 +178,7 @@ class Jigoshop_Additonal_Taxonomy_Content_Admin extends Jigoshop_Additonal_Taxon
 								<?php foreach($shop_cats as $tag) : ?>	
 									<tr>
 										<td width="848"><strong><?php echo $tag->cat_name; ?></strong><br/>
-											<textarea class="editor" style="width:848px;height:200px"  name="<?php echo $this->data['prefix']; ?>tax_<?php echo $tag->category_nicename; ?>"><?php echo html_entity_decode(wp_richedit_pre( esc_html( get_option( $this->data['prefix'] . 'tax_' .  $tag->category_nicename) ) ) ); ?></textarea>
+											<textarea class="editor" style="width:848px;height:200px"  name="<?php echo $this->data['prefix']; ?>tax_<?php echo $tag->category_nicename; ?>"><?php echo html_entity_decode(wp_richedit_pre( esc_html( stripslashes(get_option( $this->data['prefix'] . 'tax_' .  $tag->category_nicename) ) ) ) ); ?></textarea>
 										</td>
 
 									</tr>

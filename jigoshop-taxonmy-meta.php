@@ -19,7 +19,7 @@ function jigoshop_additonal_taxonomy()
 {
 	global $term, $jct_admin;
 	$term_additonal_content = get_option($jct_admin->data['prefix'] . 'tax_' . $term);
-	if($term_additonal_content) echo '<div class="more-tax-desc">' . html_entity_decode(wp_richedit_pre( $term_additonal_content )) . '</div>';
+	if($term_additonal_content) echo '<div class="more-tax-desc">' . html_entity_decode(wp_richedit_pre( stripslashes ($term_additonal_content) )) . '</div>';
 }
 
 ?>
