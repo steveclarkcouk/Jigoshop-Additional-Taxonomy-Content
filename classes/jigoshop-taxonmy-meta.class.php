@@ -143,7 +143,7 @@ class Jigoshop_Additonal_Taxonomy_Content_Admin extends Jigoshop_Additonal_Taxon
 					<table class="widefat" >
 						<thead>
 							<tr>
-								<th colspan="2">Product Categories<br/><br/><b>Important:</b>In order for this content to render on your site you will need to make a PHP function call on your product-taxonomy.php template: <code>
+								<th colspan="2">Product Categories<br/><br/><b>Important:</b>In order for this content to render on your site you will need to make a PHP function call on your product-taxonomy.php template:<br/> <code>
 								&lt;?php if(function_exists('jigoshop_additonal_taxonomy')) { jigoshop_additonal_taxonomy(); } ?&gt;</code></th>
 							</tr>
 						</thead>	
@@ -168,7 +168,7 @@ class Jigoshop_Additonal_Taxonomy_Content_Admin extends Jigoshop_Additonal_Taxon
 						<table class="widefat" >
 							<thead>
 								<tr>
-									<th colspan="2">Product Tags<br/><br/><b>Important:</b>In order for this content to render on your site you will need to make a PHP function call on your product-taxonomy.php template: <code>
+									<th colspan="2">Product Tags<br/><br/><b>Important:</b>In order for this content to render on your site you will need to make a PHP function call on your product-taxonomy.php template:<br/> <code>
 									&lt;?php if(function_exists('jigoshop_additonal_taxonomy')) { jigoshop_additonal_taxonomy(); } ?&gt;</code></th>
 								</tr>
 							</thead>	
