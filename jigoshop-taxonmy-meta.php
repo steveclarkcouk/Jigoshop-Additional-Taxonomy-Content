@@ -1,6 +1,6 @@
 <?php
 /*
-   Plugin Name:  More Taxonomy Content For Jigoshop
+   Plugin Name: Jigoshop - Additonal Taxonomy Content
    Plugin URI: 
    Description: Add Further descriptive content to your Jigoshop Category / Tags Pages
    Version: 1.0
