@@ -150,9 +150,15 @@ class Jigoshop_Additonal_Taxonomy_Content_Admin extends Jigoshop_Additonal_Taxon
 						<tbody>
 								<?php $shop_cats = get_categories('taxonomy=product_cat&title_li=&hide_empty=0'); ?>
 								<?php foreach($shop_cats as $cat) : ?>	
+									<?php if(!get_option( $this->data['prefix'] . 'tax_' .  $cat->category_nicename)) : ?>
+										<?php $taxonomy_description = $cat->description; ?>
+									<?php else: ?>
+										<?php $taxonomy_description = get_option( $this->data['prefix'] . 'tax_' .  $cat->category_nicename); ?>
+									<?php endif; ?>	
+									
 									<tr>
 										<td style="width:848px;" width="848"><strong><?php echo $cat->cat_name; ?></strong><br/>
-											<textarea class="editor" style="width:848px;height:200px"  name="<?php echo $this->data['prefix']; ?>tax_<?php echo $cat->category_nicename; ?>"><?php echo html_entity_decode(wp_richedit_pre( esc_html( stripslashes ( get_option( $this->data['prefix'] . 'tax_' .  $cat->category_nicename) ) ) ) ); ?></textarea>
+											<textarea class="editor" style="width:848px;height:200px"  name="<?php echo $this->data['prefix']; ?>tax_<?php echo $cat->category_nicename; ?>"><?php echo html_entity_decode(wp_richedit_pre( esc_html( stripslashes ( $taxonomy_description ) ) ) ); ?></textarea>
 										</td>
 
 									</tr>
